@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/open-props");@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");*{margin:0;padding:0}.float-left{float:left}.float-right{float:right}.text-al-left{text-align:left}.text-al-right{text-align:right}.text-al-center{text-align:center}.child-center{display:grid;place-items:center}html{font-family:Zen Dots,cursive;line-height:1.5em;overflow-x:hidden;scroll-behavior:smooth}::-webkit-scrollbar{width:.75rem}::-webkit-scrollbar-track{background-color:var(--gray-4)}::-webkit-scrollbar-thumb{background-color:var(--gray-6);border:2px solid var(--gray-4);border-radius:var(--radius-4)}h2{line-height:2em;text-decoration:underline}@keyframes onload{0%{background-color:#40e0d0;opacity:0}to{opacity:1}}body{animation:onload 6s ease}:root{--cyan:#ddfff7;--pink:#ffd2fc;--violet:#e980fc;--violet2:#b96ac9;--black:#231b1b;--blue:#3949ab;--green:#7cb342;--green-l1:#94c561;--green-l2:#add285;--green-d1:#638f35;--orange:#fb8c00;--white:#fff;--base:#333;--blue-d1:#283378;--about:var(--base);--shadow-5:.125em .125em .25em var(--black);--shadow-6:.2rem .2rem .2rem var(--black);--intro-gradient:var(--gradient-21);--max-width:100vw;--nav-height:5rem;--tween-shadow:0 4rem 1rem var(--black)}#intro{background-color:var(--violet);background-size:cover;display:grid;height:calc(100vh - 10rem);place-items:center;width:var(--max-width)}.lovis{color:var(--cyan);font-family:Zen Dots,cursive;font-size:4rem;position:relative;text-shadow:var(--shadow-5)}.lovis:before{background-color:var(--cyan);border-radius:.125em;box-shadow:var(--shadow-5);content:"";height:.125em;position:absolute;transform:translateY(1em);transition:all .5s ease-in-out;width:0}nav{align-items:center;background-color:var(--pink);display:flex;height:var(--nav-height);justify-content:space-around;position:sticky;top:0;width:var(--max-width);z-index:2}nav a{border:2px solid var(--cyan-9);color:var(--cyan-9);font-size:1.25rem;margin:1em 0;padding:.25em 1.5em;position:relative;text-decoration:none;transition:all .25s ease}nav a:before{bottom:0;content:"";left:0;outline:var(--cyan-9) 2px solid;position:absolute;right:0;top:0;transition:all .5s ease}#contact{background-color:var(--blue);display:flex;flex-wrap:wrap;justify-content:center;min-height:30vh;width:var(--max-width)}#contact a{color:var(--white)}.contact-icon{background:url(https://api.iconify.design/ic:baseline-alternate-email.svg?color=currentColor) no-repeat 50%/contain;float:left;height:4rem;width:4rem}.contact-content{float:right}.card{border:3px solid var(--blue-d1);border-radius:var(--radius-4);cursor:pointer;height:6rem;margin:2rem;padding:2.5rem 2rem;text-align:center;width:14rem}.card,.card-hidden{transition:all .5s ease}.card-hidden{color:var(--gray-4);font-size:0}.card-wrapper{color:var(--white);display:flex;flex-wrap:wrap;justify-content:space-around;margin:calc(var(--nav-height)*2) 0;width:calc(var(--max-width) - 30%)}#about{background-color:var(--about);display:grid;min-height:60vh;place-content:center}.about-wrapper{border:3px solid var(--black);border-radius:var(--radius-5);box-shadow:inset var(--shadow-6);display:flex;flex-wrap:wrap;justify-content:space-around;max-width:80vw;padding:2.5rem}.about-item{border:2px solid #fff;border-radius:var(--radius-5);box-shadow:var(--shadow-6);height:500px;margin:2rem;overflow:hidden;position:relative;width:300px}.about-icon{background:var(--gradient-23);height:100%;width:100%}.about-content,.about-icon{transition:all 1s ease-in-out}.about-content{background:transparent;bottom:3em;color:var(--white);font-family:Roboto,sans-serif;left:0;margin:0 auto;max-width:80%;position:relative;right:0;text-align:center}.about-content a{color:var(--gray-4)}#mc-icon{background-image:url(assets/mc.png);background-position:50%;background-size:cover}#css-icon{background-image:url(assets/css.png)}#css-icon,#pixel-icon{background-position:50%;background-size:cover;height:100%;width:100%}#pixel-icon{background-image:url(assets/pumuckl.jpg);background-repeat:no-repeat}#footer{background:linear-gradient(var(--orange),var(--black));display:flex;height:200px;justify-content:left}.footer-item{display:grid;margin:2rem;place-content:center}.footer-icon{filter:contrast(50%);height:50px;margin:10px;transition:all 1s ease}.footer-wrapper{align-items:center;color:var(--gray-5);display:flex;font-family:Roboto,sans-serif;justify-content:center;width:100%}.credit{height:fit-content;min-width:50px;text-align:center}.linie{border:2px solid var(--gray-5);border-radius:3px;height:60%;width:0}.other-tools{background-color:var(--black);border:none;bottom:0;color:var(--gray-5);display:flex;font-size:.75rem;justify-content:space-around;padding:.5em;position:relative;width:100%}.other-tools a{color:var(--gray-6);font-family:Roboto,sans-serif}#footer-links{align-items:center;display:grid;grid-auto-flow:column}.lovis:hover:before{width:100%}.lovis:hover{cursor:url(https://api.iconify.design/twemoji:cookie.svg?color=currentColor),auto}nav a:hover{box-shadow:inset var(--shadow-5);text-shadow:var(--shadow-5)}::-webkit-scrollbar-thumb:hover{background-color:var(--gray-7)}a:hover{text-decoration:underline;text-decoration-style:double}.card:hover .card-hidden{font-size:1rem}.card:hover{box-shadow:inset var(--shadow-6);text-shadow:var(--shadow-6)}.about-item:hover .about-content{transform:translateY(-110%)}.about-item:hover .about-icon{filter:brightness(50%)}.footer-icon:hover{filter:contrast(1);transform:scale(1.1)}.software{display:inline}.tween-nav-contact{background-color:var(--blue)}.tween-nav-contact img{width:100%}.tween-intro-nav{background-image:linear-gradient(var(--violet),var(--pink));height:5rem}.tween-contact-about{background-color:var(--about)}.tween-contact-about img{filter:drop-shadow(var(--tween-shadow));margin:0;width:100%}.tween-footer img{width:100%}.tween-footer{background-color:var(--base);display:grid}.tooltip{display:inline-block;position:relative}.tooltip .tooltiptext{background-color:#555;border-radius:6px;bottom:150%;color:#fff;font-family:Roboto,sans-serif;left:50%;margin-left:-75px;opacity:0;padding:5px;position:absolute;text-align:center;transition:opacity .3s;visibility:hidden;width:140px;z-index:1}.tooltip .tooltiptext:after{border:5px solid transparent;border-top-color:#555;content:"";left:50%;margin-left:-5px;position:absolute;top:100%}.tooltip:hover .tooltiptext{opacity:1;visibility:visible}.toast{background-color:var(--green-l2);border:4px dotted var(--green-d1);bottom:0;display:none;font-family:Courier New,Courier,monospace;margin:1rem;opacity:0;outline:var(--green-l2) solid 4px;padding:1em;position:fixed;transition:1s}.toast-wrapper{position:relative;z-index:4}.toast.block{display:block}.toast.eingeblendet{opacity:1}.toast.ausgeblendet{opacity:0}@media (max-width:1500px){.about-wrapper{border:none;box-shadow:none}.about-item{max-height:60vh;transform:scale(1.1)}nav a{box-shadow:inset var(--shadow-5);font-size:0;height:50px;text-shadow:var(--shadow-5);width:50px}#nav-contact{background:url(https://api.iconify.design/ic:round-contact-page.svg?color=currentColor) no-repeat 50%/contain}#nav-intro{background:url(https://api.iconify.design/ic:baseline-arrow-upward.svg?color=currentColor) no-repeat 50%/contain}#nav-about{background:url(https://api.iconify.design/ic:round-info.svg?color=currentColor) no-repeat 50%/contain}.card{box-shadow:inset var(--shadow-6);text-shadow:var(--shadow-6)}.card-hidden{font-size:1rem}.other-tools{display:none}}@media (max-width:320px){.zuklein{display:fixed;width:100%}.alles{display:none}body{animation:none;background-color:red;display:grid;height:100vh;padding:1em;place-content:center}}@media (min-width:320px){.zuklein{display:none}}@media (min-height:350px){.zukleinvertikal{display:none}}@media (max-height:350px){.zukleinvertikal{display:fixed;width:100%}.alles,.zuklein{display:none}body{animation:none;background-color:red;display:grid;height:100vh;padding:1em;place-content:center}}
+    </style>
+    <title>Lovis Rentsch</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script defer>
+    function copydc() {
+        var copyText = "Das Eichhörnchen#7389";
+        navigator.clipboard.writeText(copyText);
+        toasteinblenden();
+    }
+    function copymatrix() {
+        var copyText = "@baerlkr:matrix.org";
+        navigator.clipboard.writeText(copyText);
+        toasteinblenden();
+    }
+    function copymail() {
+        var copyText = "mail@lovisrentsch.de";
+        navigator.clipboard.writeText(copyText);
+        toasteinblenden();
+    }
+    function toasteinblenden(toast) {
+        document.getElementById("toast-copy").classList.add("block");
+        window.setTimeout( function() {
+            document.getElementById("toast-copy").classList.add("eingeblendet");
+        },1);
+        window.setTimeout(toastausblenden, 2500);
+    }
+    function toastausblenden(toast) {
+        document.getElementById("toast-copy").classList.add("ausgeblendet");
+        window.setTimeout(function() {
+            document.getElementById("toast-copy").classList.remove("block");
+        },500);
+        document.getElementById("toast-copy").classList.remove("eingeblendet");
+        document.getElementById("toast-copy").classList.remove("ausgeblendet");
+    }
+    </script>
+</head>
+<body>
+    <div class="zuklein">
+        <p>
+            Dein Bildschirm ist zu klein!
+        </p>
+    </div>
+    <div class="zukleinvertikal">
+        <p>
+            Dein Bildschirm ist zu klein!
+        </p>
+    </div>
+    <div class="alles">
+    <div class="toast-wrapper">
+        <div class="toast" id="toast-copy">
+            In die Zwischenablage kopiert!
+        </div>
+    </div>
+    <section id="intro">
+        <div class="lovis">Lovis</div>
+    </section>
+    <div class="tween-intro-nav">
+    </div>
+        <nav>
+            <a href="#intro" id="nav-intro">Intro</a>
+            <a href="#contact" id="nav-contact" >Kontakt</a>
+            <a href="#about" id="nav-about" >about</a>
+        </nav>
+        
+        <div class="tween-nav-contact">
+            <img src="assets/nav-contact.svg" alt="tween-stacked-waves">
+        </div>
+    <section id="contact">
+        <div class="card-wrapper">
+        <div class="card" onclick="copydc()" id="contact-dc">
+            <h2>Discord</h2>
+            <p id="contact-dc-copy">Das Eichhörnchen#7389</p>
+            <div class="card-hidden">click to copy</div>
+        </div>
+        <div class="card" onclick="copymatrix()" id="contact-matrix">
+            <h2>Matrix</h2>
+            <a href="https://matrix.to/#/@baerlkr:matrix.org">@baerlkr:matrix.org</a>
+            <div class="card-hidden">click to copy</div>
+        </div>
+        <div class="card" onclick="copymail()" id="contact-mail">
+            <h2>Mail</h2>
+            <a href="mailto:mail@lovisrentsch.de">mail@lovisrentsch.de</a>
+            <div class="card-hidden">click to copy</div>
+        </div>
+        </div>
+    </section>
+    <div class="tween-contact-about">
+        <img src="assets/contact-about.svg" alt="contact-about-wave">
+    </div>
+    <section id="about">
+        <div class="about-wrapper">
+            <div class="about-item pixel">
+                <div class="about-icon" id="pixel-icon"></div>
+                <div class="about-content pixel-content">
+                    <h2>Pixelart</h2>
+                    <p>Ich finde den Pixelart Style sehr ansprechend. Auch animiertes Pixelart finde ich faszinierend.</p>
+                    <a href="https://www.reddit.com/r/placeDE/comments/tvegho/pumuckl_meister_eder/?utm_source=share&utm_medium=web2x&context=3">u/sleepdeeptreep</a>
+                </div>
+            </div>
+            <div class="about-item mc">
+                <div class="about-icon" id="mc-icon"></div>
+                <div class="about-content mc-content">
+                    <h2>Minecraft</h2>
+                    <p>
+                        Minecraft ist mein Lieblingsspiel auf dem PC.
+                    </p>
+                    <a href="https://de.namemc.com/profile/BaerLKR.1">IGN: BaerLKR</a>
+                </div>
+            </div>
+            <div class="about-item css">
+                <div class="about-icon" id="css-icon"></div>
+                <div class="about-content css-content">
+                    <h2>CSS</h2>
+                    <p>
+                        Ich entwerfe gerne Seiten mit HTML, CSS und JS.
+                    </p>
+                    <a href="css/style.css">style.css</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="tween-footer">
+        <img src="assets/footer.svg" alt="footer-wave">
+    </div>
+    <section id="footer">
+        <div class="footer-wrapper">
+        <div class="footer-item" id="footer-links">
+            <div class="credit">
+            <p>von</p>
+            <p>Lovis</p>
+        </div>
+        <div class="github tooltip">
+            <div class="tooltiptext">Quellcode</div>
+            <a href="https://github.com/LoviRent/LoviRent.github.io">
+                <img src="https://api.iconify.design/uil:github.svg" alt="git-icon" class="footer-icon" >
+            </a>
+        </div>
+        </div>
+        <div class="linie">
+        </div>
+        <div class="software footer-item">            
+            <div class="openprops tooltip footer-icon-wrapper">
+                <div class="tooltiptext">
+                    PostCSS
+                </div>
+                <a href="https://postcss.org/">
+                <img src="https://camo.githubusercontent.com/a2ebaaedf9af41416a2717b3a28f405b39535397f4463c5c5119146c84c240f9/68747470733a2f2f706f73746373732e6f72672f6c6f676f2e737667" class="footer-icon">
+            </a>
+            </div>
+            <div class="postcss tooltip footer-icon-wrapper">
+                <div class="tooltiptext">
+                    openprops
+                </div>
+                <a href="https://open-props.style/">
+                <img src="https://user-images.githubusercontent.com/1134620/141246730-7df4cf2a-6249-42ca-a01b-494c3ccddabe.png" class="footer-icon">
+            </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="other-tools">
+        <div class="tooltip" id="used-1">
+            <a href="https://vipinmishra.dev/VIPColors/">VIP colors</a>
+            <div class="tooltiptext">eine Farbpalette</div>
+        </div>
+        <div class="tooltip" id="used-2">
+            <a href="https://vipinmishra.dev/color-shades-generator/">colorshades</a>
+            <div class="tooltiptext">hell/dunkel Farbtöne</div>
+        </div>
+        <div class="tooltip" id="used-3">
+            <a href="https://cssgradient.io/">CSS gradient</a>
+            <div class="tooltiptext">CSS Farbverläufe</div>
+        </div>
+        <div class="tooltip" id="used-4">
+            <a href="https://haikei.app/">Haikei</a>
+            <div class="tooltiptext">ein SVG/PNG Wellen-Generator</div>
+        </div>
+        <div class="tooltip" id="used-5">
+            <a href="https://icones.js.org/">icones</a>
+            <div class="tooltiptext">Icons ohne Download</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
